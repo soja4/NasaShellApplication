@@ -66,7 +66,6 @@ public class NasaCommand {
                         saveImage(image.getImageName(), date, subFolderPath);
                     } catch (IOException e) {
                         System.out.println("Error while saving image: " + image.getImageName());
-                        throw new RuntimeException("Error while saving image: " + image.getImageName());
                     }
                 });
 
