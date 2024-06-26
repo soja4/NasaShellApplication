@@ -63,9 +63,9 @@ public class NasaCommand {
 
                 imageList.forEach(image -> {
                     try {
-                        saveImage(image.getImageName(), date, subFolderPath);
+                        saveImage(image.getImage(), date, subFolderPath);
                     } catch (IOException e) {
-                        System.out.println("Error while saving image: " + image.getImageName());
+                        System.out.println("Error while saving image: " + image.getImage());
                     }
                 });
 
